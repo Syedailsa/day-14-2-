@@ -5,4 +5,10 @@ function magicians_show(magicians) {
     });
 }
 ;
+function make_great(magicians) {
+    for (var i = 0; i < magicians.length; i++) {
+        magicians[i] = "The great " + magicians[i];
+    }
+}
+make_great(magicians);
 magicians_show(magicians);

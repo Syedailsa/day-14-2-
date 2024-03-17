@@ -6,4 +6,13 @@ function magicians_show(magicians: string[]){
     })
 };
 
-magicians_show(magicians);
+//modifying an array
+function make_great(magicians: string[]) {
+    for (let i = 0; i < magicians.length; i++) {
+        magicians[i] = "the great " + magicians[i];
+    }
+}
+
+make_great(magicians); 
+magicians_show(magicians); 
+
